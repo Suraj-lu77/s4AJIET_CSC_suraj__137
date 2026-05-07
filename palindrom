@@ -7,14 +7,14 @@ public class Main {
       
       int a =101;
       int b=a;
-      System.out.println("before swap:"+a);
+      System.out.println("before :"+a);
       int rev=0,last;
       while(a>0){
         last=a%10;
         rev=rev*10+last;
         a=a/10;
       }
-      System.out.println("after swap:"+rev);
+      System.out.println("after "+rev);
       if(b==rev){
         System.out.println("palindrome");
       }
