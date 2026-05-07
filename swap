@@ -1,0 +1,14 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      float a=20;
+      float b=4;
+      System.out.println("before swap:"+a+","+b);
+      float temp;
+      temp=a;
+      a=b;
+      b=temp;
+      System.out.println("after swap:"+a+","+b);
+    }
+}
