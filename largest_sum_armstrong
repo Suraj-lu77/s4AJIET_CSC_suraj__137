@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+      
+      
+      Scanner h=new Scanner(System.in);
+      int n= h.nextInt();
+      int t=n;
+      int g=t;
+      
+      
+      int larg=0,d;
+      while(n>0){
+        d =n%10;
+        if(d>larg){
+          larg=d;
+        }
+        else{
+          n=n/10;
+        }
+        
+      }
+      System.out.println("largest:"+larg);
+      int sum=0,c=0;
+      while(t>0){
+        d=t%10;
+        sum=sum+d;
+        c=c+((int)Math.pow(d, 3));
+        t=t/10;
+      }
+      System.out.println("sum:"+sum);
+      
+      if(c==g){
+        System.out.println(" the number is Armstrong");
+      }
+      else{
+        System.out.println("the number is not Armstrong");
+      }
+    }
+}
