@@ -1,0 +1,33 @@
+import java.util.Scanner;
+import java.util.Arrays;
+public class Main {
+    public static void main(String[] args) {
+    
+    StringBuilder q=new StringBuilder();
+    Scanner k=new Scanner(System.in);
+    String a=k.nextLine();
+  String b=k.nextLine();
+  String s1,s2;
+  s1=a.toLowerCase();
+  s2=b.toLowerCase();
+  char x[]=new char[100];
+  char y[]=new char[100];
+  if (a.length() !=b.length()){
+    System.out.println("anagram");
+  }
+  
+  else{
+     x=a.toCharArray();
+     y=b.toCharArray();
+  }
+  Arrays.sort(x);
+  Arrays.sort(y);
+  if(Arrays.equals(x, y)){
+    System.out.println("anagram");
+  }
+  else{
+    System.out.println(" not an anagram");
+  }
+    }
+    
+}
