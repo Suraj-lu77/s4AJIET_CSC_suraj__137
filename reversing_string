@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+    
+    StringBuilder q=new StringBuilder();
+    Scanner k=new Scanner(System.in);
+    String a=k.nextLine();
+    System.out.println(a);
+    q.append(a).reverse();
+    String f =q.toString();
+    System.out.println(f);
+    if(a==f){
+      System.out.println("palindrom");
+    }
+    else {
+      System.out.println(" not a palindrom");
+    }
+    } 
+}
