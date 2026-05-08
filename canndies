@@ -1,0 +1,34 @@
+import java.util.Scanner;
+import java.util.Arrays;
+public class Main {
+    public static void main(String[] args) {
+    
+    Scanner h=new Scanner(System.in);
+    int n=h.nextInt();
+    int k=h.nextInt();
+     int j=n;
+    for(int i=0;i<=n;i++){
+          int sold=h.nextInt();
+        if(sold>n){
+          System.out.println("INVALID");
+          
+        }
+        else if(sold<k){
+          
+          j=j-sold;
+          System.out.println("Number of Candies Sold:"+sold);
+        System.out.println("Number of Candies available:"+j);
+        }
+        else{
+          
+          j = n;
+          j=j-sold;
+          System.out.println("Number of Candies Sold:"+sold);
+        System.out.println("Number of Candies available:"+j);
+        }
+          
+        
+       
+        }
+    }
+}
